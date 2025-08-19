@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Nest Nursery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4fbe3;
+  color: #2d2d2d;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background: #1f1f1f;
+  color: #f4fbe3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #3c8031;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?green,plants') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.plant-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.plant-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.plant-card:hover {
+  transform: translateY(-10px);
+}
+
+.plant-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-section {
+  padding: 60px 40px;
+  background: #d1e7c9;
+  text-align: center;
+}
+
+footer {
+  background: #3c8031;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+</style>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🌿 Green Nest</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#plants">Plants</a></li>
+      <li><a href="#about">About</a></li>
+      <li><button id="themeToggle">🌓</button></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Green Nest</h1>
+    <p>Explore the freshness of nature at your doorstep</p>
+  </section>
+
+  <section id="plants" class="plant-section">
+    <h2>Our Popular Plants</h2>
+    <div class="card-container">
+      <div class="plant-card">
+        <img src="https://source.unsplash.com/200x200/?plant" alt="Plant">
+        <h3>Peace Lily</h3>
+        <p>Air-purifying and elegant.</p>
+      </div>
+      <div class="plant-card">
+        <img src="https://source.unsplash.com/200x200/?bonsai" alt="Bonsai">
+        <h3>Bonsai</h3>
+        <p>Perfect harmony in a pot.</p>
+      </div>
+      <div class="plant-card">
+        <img src="https://source.unsplash.com/200x200/?cactus" alt="Cactus">
+        <h3>Cactus</h3>
+        <p>Low maintenance beauty.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>At Green Nest, we provide a curated selection of houseplants to bring joy, oxygen, and beauty to your living space.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Green Nest Nursery | Designed with 💚</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Nest Nursery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🌿 Green Nest</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#plants">Plants</a></li>
+      <li><a href="#about">About</a></li>
+      <li><button id="themeToggle">🌓</button></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
